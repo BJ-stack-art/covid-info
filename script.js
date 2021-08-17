@@ -21,14 +21,3 @@ const getIndonesiaData = () => {
 }
 
 getIndonesiaData()
-
-
-
-
-/* 
-    https://covid19.mathdro.id/api/countries/Indonesia
-    https://indonesia-covid-19.mathdro.id/api/provinsi/
-    https://bnpb-inacovid19.hub.arcgis.com/datasets/data-harian-kasus-per-provinsi-covid-19-indonesia/api
-    http://vaksincovid19-api.vercel.app/api/vaksin
-    https://rs-bed-covid-api.vercel.app/
-*/
