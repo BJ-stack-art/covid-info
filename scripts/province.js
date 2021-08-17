@@ -49,9 +49,11 @@ const detailElement = document.getElementById('detail-data')
 
 // filter data
 const filterData = (value) => {
+    let notfound = true
     dataApi.forEach(item => {
         if(item.provinsi.toLowerCase().includes(value.toLowerCase())) {
-
+            notfound = false
+            
             let provinsi = detailElement.querySelector('.provinsi')
             let positif = detailElement.querySelector('.positif')
             let sembuh = detailElement.querySelector('.sembuh')
@@ -66,6 +68,11 @@ const filterData = (value) => {
             meninggal.textContent = formatNumber(item.kasusMeni)
         }
     })
+    if(notfound) {
+        listContainer.style.display = "none"
+        const element = document.getElementById('notfound')
+        element.style.display = 'block'
+    }
 }
 
 
